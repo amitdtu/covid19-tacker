@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  /* height: 5rem; */
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 2px 3px 3px #f7f7f7;
+}
+
+.recovered {
+  border-top: 15px solid #74e95d;
+}
+.deaths {
+  border-top: 15px solid #dd5050;
+}
+.confirmed {
+  border-top: 15px solid #ffa928;
+}
+
+@media all and (max-width: 699px) and (min-width: 300px) {
+  .card {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
