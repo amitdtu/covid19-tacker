@@ -19,10 +19,10 @@ export default class App extends Component {
   }
 
   countryHandler = (country) => {
-    console.log(country);
+    // console.log(country);
     const fetchAPI = async () => {
       const countryData = await fetchData(country);
-      console.log('single country data ', countryData);
+      // console.log('single country data ', countryData);
       this.setState({ data: countryData, country: country });
     };
 

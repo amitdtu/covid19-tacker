@@ -5,7 +5,7 @@ import cx from 'classnames';
 import CountUp from 'react-countup';
 
 export default function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
-  console.log(lastUpdate);
+  // console.log(lastUpdate);
   if (!confirmed) {
     return <Skeleton active width={'33%'} />;
   }
