@@ -38,6 +38,9 @@ body {
 
 @media all and (max-width: 699px) and (min-width: 300px) {
   .container {
-    margin: 0;
+    margin: 1rem;
+  }
+  .head {
+    padding: 0.5rem 1rem;
   }
 }
