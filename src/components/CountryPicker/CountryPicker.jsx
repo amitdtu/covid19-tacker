@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Select } from 'antd';
 import { fetchCountries } from '../../api';
+import styles from './CountryPicker.module.css';
 
 const { Option } = Select;
 
@@ -31,10 +32,10 @@ export default function CountryPicker({ selectedCountry, selectedGraph }) {
   return (
     <div>
       <Select
+        className={styles.country}
         showSearch
         optionFilterProp='children'
         filterOption={(input, option) => option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
-        style={{ width: '20%', margin: '1.5rem 0' }}
         defaultValue=''
         onChange={handleChange}
       >
@@ -48,7 +49,7 @@ export default function CountryPicker({ selectedCountry, selectedGraph }) {
           : null}
       </Select>
       {isCountrySelected ? (
-        <Select defaultValue={graph} style={{ width: '10%', margin: '1.5rem 1rem' }} onChange={graphHandler}>
+        <Select className={styles.graph} defaultValue={graph} onChange={graphHandler}>
           <Option value=''>Bar</Option>
           <Option value='doughnut'>Doughnut</Option>
         </Select>

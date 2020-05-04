@@ -1,0 +1,16 @@
+.graph {
+  width: 20%;
+  margin: 1.5rem 1rem !important;
+}
+
+.country {
+  width: 20%;
+  margin: 1.5rem 0 !important;
+}
+
+@media all and (max-width: 699px) and (min-width: 300px) {
+  .graph,
+  .country {
+    width: 35%;
+  }
+}
