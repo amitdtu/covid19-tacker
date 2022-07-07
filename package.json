@@ -14,7 +14,7 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "classnames": "^2.2.6",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-countup": "^4.3.3",
@@ -23,7 +23,7 @@
     "serve": "^11.3.0"
   },
   "resolutions": {
-    "moment": "2.24.0"
+    "moment": "2.29.4"
   },
   "scripts": {
     "dev": "react-scripts start",
